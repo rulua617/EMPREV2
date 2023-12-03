@@ -1,16 +1,25 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import App from "./App.jsx";
 import "./index.css";
 import { NextUIProvider } from "@nextui-org/react";
 import Header from "./Header";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+
+
+
+ReactDOM.render(
   <React.StrictMode>
-    <NextUIProvider>
-      <Header />
-      <br /> 
-      <App />
+    <NextUIProvider >
+     
+        <main className="dark text-foreground bg-background">
+          <Header />
+          <br />
+         
+          <App />
+        </main>
+   
     </NextUIProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );

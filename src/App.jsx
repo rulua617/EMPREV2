@@ -6,15 +6,18 @@ import { Card, CardFooter, Image, Button } from "@nextui-org/react";
 import Productos from "./Productos";
 import Header from "./Header";
 
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div>
-        <Productos  />
-      </div>
-    </>
+  
+      <main >
+        <div>
+          <Productos />
+        </div>
+      </main>
+  
   );
 }
 
